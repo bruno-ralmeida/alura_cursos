@@ -16,7 +16,7 @@ public class CriaContaComSaldo {
 		
 		conta.setAgencia(001);
 		conta.setNumero(002);
-		conta.setTitular("Ana");
+//		conta.setTitular("Ana");
 		conta.setSaldo(500.0);
 		
 		em.getTransaction().begin();

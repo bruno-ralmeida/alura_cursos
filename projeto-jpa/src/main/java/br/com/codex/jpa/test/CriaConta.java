@@ -15,7 +15,7 @@ public class CriaConta {
 
 		conta.setAgencia(001);
 		conta.setNumero(00001);
-		conta.setTitular("Bruno Rocha");
+//		conta.setTitular("Bruno Rocha");
 		conta.setSaldo(1000.00);
 		em.getTransaction().begin();
 		em.persist(conta);

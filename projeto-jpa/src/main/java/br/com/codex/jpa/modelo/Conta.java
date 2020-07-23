@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Conta {
@@ -13,7 +14,8 @@ public class Conta {
 	private Integer agencia;
 	private Integer numero;
 	private Double saldo;
-	
+
+
 	public Double getSaldo() {
 		return saldo;
 	}
@@ -21,8 +23,6 @@ public class Conta {
 	public void setSaldo(Double saldo) {
 		this.saldo = saldo;
 	}
-
-	private String titular;
 
 	public Long getId() {
 		return id;
@@ -46,14 +46,6 @@ public class Conta {
 
 	public void setNumero(Integer numero) {
 		this.numero = numero;
-	}
-
-	public String getTitular() {
-		return titular;
-	}
-
-	public void setTitular(String titular) {
-		this.titular = titular;
 	}
 
 }
